@@ -2,7 +2,7 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400");
 @import url('https://fonts.googleapis.com/css?family=Yeon+Sung');
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 /*
 	Interphase by TEMPLATED
 	templated.co @templatedco
@@ -559,6 +559,10 @@
 					padding-right: 0;
 				}
 
+					ul.actions li:hover {
+						background-color: 
+					}
+
 			ul.actions.small li {
 				padding: 0 0.5em 0 0;
 			}
@@ -797,7 +801,7 @@
 		input[type="button"].alt,
 		.button.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+			box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 1);
 			color: #666 !important;
 		}
 
@@ -805,7 +809,7 @@
 			input[type="reset"].alt:hover,
 			input[type="button"].alt:hover,
 			.button.alt:hover {
-				background-color: rgba(144, 144, 144, 0.075);
+				background-color: rgba(252, 205, 0	, 1);
 			}
 
 			input[type="submit"].alt:active,
@@ -861,20 +865,41 @@
 /* Header */
 
 	body.landing #header {
-		background-color: transparent;
 		left: 0;
 		position: absolute;
 		top: 0;
 	}
 
 	#header {
-		background-color: #202222;
 		color: #ffffff;
 		cursor: default;
-		height: 4.75em;
-		line-height: 4.75em;
+		height: 4.5em;
+		line-height: 4.5em;
 		width: 100%;
 		z-index: 10000;
+		padding: 0px 3.25%;
+		text-transform: uppercase;
+	}
+
+	#header>.bg {
+		z-index: -1;
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    right: 0px;
+	    bottom: 0px;
+	    background-color: rgba(0, 0, 0, 0.6);
+	    transition: opacity 50ms;
+	    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+	}
+
+	#header>.bar {
+		position: absolute;
+	    bottom: -2px;
+	    left: 0px;
+	    right: 0px;
+	    height: 2px;
 	}
 
 		#header h1 {
@@ -923,10 +948,11 @@
 						color: #cee8d8;
 						display: inline-block;
 						text-decoration: none;
+						font-family: 'Ubuntu', sans-serif;
 					}
 
 						#header nav > ul > li a:hover {
-							color: #ffffff;
+							color: rgb(252, 205, 0);
 						}
 
 					#header nav > ul > li:first-child {
@@ -958,7 +984,7 @@
 			position: relative;	
 			width: 64px;
 			height: 64px;
-			margin: 1%;
+			margin: 0.5%;
 		}		
 
 /* Banner */
@@ -975,17 +1001,26 @@
 
 		#banner h2 {
 			color: #ffffff;
-			font-size: 5em;
+			font-size: 6em;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
 			font-family: 'Yeon Sung', cursive;
-			text-shadow: 5px 5px #000000;
+
+			-webkit-text-stroke: 2px black;
+		   	color: white;
+		   	text-shadow:
+		       	5px 5px 0 #000,
+		     	-1px -1px 0 #000,  
+		      	1px -1px 0 #000,
+		     	-1px 1px 0 #000,
+		      	1px 1px 0 #000;
 		}
 
 		#banner p {
-			font-size: 1.5em;
+			font-size: 2em;
 			margin: 1.5em 0 0 0;
+			font-family: 'Yeon Sung', cursive;
 		}
 
 		#banner .actions {
@@ -1113,5 +1148,9 @@
 	    padding: 15px; /* Some padding */
 	    font-size: 60px; /* Increase font size */
  
+	}
+
+	.back-to-top:hover {
+		color: rgb(252, 205, 0);
 	}
   	
