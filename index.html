@@ -20,6 +20,7 @@
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel=”stylesheet” id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -27,12 +28,14 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">GWC</a></h1>
+				<a id="top" href="index.html"><img class="logo" src="images/logo.png" alt="" /></a>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html">About Us</a></li>
-						<li><a href="elements.html">Contact Us</a></li>
+						<li><a href="#projects">Our Projects</a></li>
+						<li><a href="ost.html">Sountrack</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#contacts">Contact Us</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -52,6 +55,7 @@
 			<section id="one" class="wrapper style1 align-center">
 				<div class="container">
 					<header>
+						<h2 id="about"></h2>
 						<h2>About Us</h2>
 						<p>Who are we and what are we doing.</p>
 					</header>
@@ -76,6 +80,7 @@
 			<section id="two" class="wrapper style2 align-center">
 				<div class="container">
 					<header>
+						<a name="projects"></a>
 						<h2>Our Projects</h2>
 						<p>Check our published projects</p>
 					</header>
@@ -168,6 +173,11 @@
 					</ul>
 				</div>
 			</footer>
+
+		<a href="#" class="back-to-top">
+			<i class="fa fa-arrow-circle-up"></i>
+		</a>
+		<script src="js/smooth-scroll.js"></script>
 
 	</body>
 </html>
