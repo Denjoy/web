@@ -871,11 +871,12 @@
 
 	body.landing #header {
 		left: 0;
-		position: absolute;
+
 		top: 0;
 	}
 
 	#header {
+		position: fixed;
 		color: #ffffff;
 		cursor: default;
 		height: 4.5em;
@@ -924,6 +925,7 @@
 			}
 
 		#header nav {
+
 			height: inherit;
 			line-height: inherit;
 			position: absolute;
